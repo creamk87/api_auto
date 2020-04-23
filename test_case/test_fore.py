@@ -41,5 +41,5 @@ usermessage = get_excel_row(4)[0]  # 取5行的数据，取第一个数据，保
 json = eval(usermessage)
 # json格式数据，定义值，也是用字典格式保存  json格式！！！！
 r_login = requests.post(url=url_login, json=json)
-
+print(r_login.json())
 
